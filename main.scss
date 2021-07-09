@@ -25,8 +25,9 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 111;
-	box-shadow: 0 0 15px #5f5e5e;
+	box-shadow: 0 0 5px #5f5e5e;
 	.menu {
+		display: none;
 		button {
 			border: none;
 			outline: none;
@@ -38,7 +39,7 @@ body {
 	}
 	.nav-logo {
 		h2 {
-			font-size: 3.2rem;
+			font-size: 2rem;
 			font-family: "Charmonman", cursive;
 			text-transform: uppercase;
 			color: whitesmoke;
@@ -52,17 +53,19 @@ body {
 			list-style: none;
 			padding: 1rem 2rem;
 			a {
-				font-size: 1.6rem;
+				font-size: 1rem;
 				color: whitesmoke;
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				text-decoration: none;
+
 				&::after {
 					content: "";
 					display: block;
 					height: 1px;
 					width: 0;
 					background-color: white;
+					transition: all 0.3s;
 				}
 
 				&:hover::after {
@@ -81,37 +84,37 @@ body {
 	width: 100%;
 	.hero-section {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between !important;
 		align-items: center;
-		text-align: center;
 		height: 90vh;
 		.hero-heading {
 			height: 100%;
-			width: 50%;
+			flex: 1;
 			text-align: left;
 			color: whitesmoke;
-			padding: 17rem 0rem 5rem 15rem;
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			flex-direction: column;
+			padding: 0 6rem;
+			line-height: 3rem;
 			h1 {
-				font-size: 3rem;
-				letter-spacing: 0.3rem;
+				font-size: 2.5rem;
 				text-transform: capitalize;
-				margin-bottom: -0.2rem;
 			}
 			p {
-				font-size: 1rem;
 				text-transform: uppercase;
-				letter-spacing: 0.2rem;
 			}
 			button {
 				background-color: rgba(128, 128, 128, 0.781);
 				text-transform: uppercase;
 				padding: 1rem 2rem;
-				width: 25%;
-				text-align: center;
 				font-size: 0.8rem;
-				letter-spacing: 0.4rem;
 				border-radius: 0.2rem;
 				cursor: pointer;
+				border: none;
+				outline: none;
+				color: whitesmoke;
 			}
 		}
 		.hero-img {
@@ -130,71 +133,44 @@ body {
 
 /*about*/
 #about {
-	height: 70vh;
+	height: 80vh;
 	width: auto;
-	background-color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	.about-heading {
-		text-align: left;
-		height: 100%;
-		color: black;
-		padding: 12rem 20rem 0rem 15rem;
+		padding: 0 6rem;
 		h1 {
 			font-size: 3rem;
-			letter-spacing: 0.3rem;
 			text-transform: capitalize;
-			margin-bottom: -0.3rem;
 		}
 		p {
-			font-size: 1.2rem;
-			text-transform: capitalize;
-			font-weight: 600;
+			text-transform: uppercase;
+			font-weight: normal;
+			margin: 1.5rem 0;
 		}
 		button {
 			background-color: rgba(128, 128, 128, 0.781);
 			text-transform: uppercase;
-			padding: 1rem 1.5rem;
-			outline: none;
-			border: none;
-			text-align: center;
-			color: whitesmoke;
-			font-weight: 700;
+			padding: 1rem 2rem;
 			font-size: 0.8rem;
-			letter-spacing: 0.2rem;
 			border-radius: 0.2rem;
 			cursor: pointer;
+			border: none;
+			outline: none;
+			color: whitesmoke;
 		}
+		flex: 1;
 	}
 	.about-img {
+		flex: 1;
 		height: 100%;
-		width: 50%;
-		display: none;
-		.img {
-			height: 40%;
-			width: 60%;
-			position: relative;
-			top: 39%;
-			&::after {
-				content: "";
-				position: absolute;
-				display: block;
-				top: 0;
-				right: 0;
-				height: 90%;
-				border-radius: 0.2rem;
-				transform: scale(1.45, 1.3);
-				width: 40%;
-				background-color: rgba(95, 100, 105, 0.534);
-			}
-			img {
-				height: 91%;
-				width: 100%;
-				position: relative;
-				z-index: 1;
-				border-radius: 0.2rem;
-			}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			height: 50%;
+			width: 50%;
 		}
 	}
 }
@@ -206,12 +182,13 @@ body {
 		font-size: 3rem;
 		letter-spacing: 0.3rem;
 		text-transform: capitalize;
-		margin-bottom: -0.3rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
 	}
 	p {
 		font-size: 1.2rem;
 		text-transform: capitalize;
-		font-weight: 550;
+		font-weight: 700;
 	}
 	.cards {
 		display: flex;
@@ -236,7 +213,11 @@ body {
 .hire {
 	background-color: rgba(189, 191, 194, 0.932);
 	height: 8rem;
-	padding: 0.5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 2rem;
 	width: auto;
 	text-align: center;
 	box-sizing: border-box;
@@ -266,8 +247,12 @@ body {
 	height: 15rem;
 	width: auto;
 	text-align: center;
-	padding: 2rem 0;
 	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 2rem;
 	h1 {
 		font-size: 2rem;
 		margin-bottom: -0.2rem;
@@ -294,7 +279,7 @@ body {
 		}
 	}
 	.nav-section {
-		padding: 1rem 1rem;
+		padding: 1rem;
 		.nav-logo {
 			h2 {
 				font-size: 2rem;
@@ -304,12 +289,15 @@ body {
 				text-align: left;
 			}
 		}
+		.menu {
+			display: block;
+		}
 		.nav-bar {
 			position: absolute;
 			top: 11vh;
 			right: 2%;
 			background-color: rgb(112, 108, 108);
-			height: 30vh;
+			height: 40vh;
 			width: 96vw;
 			transition: 0.4s ease-in-out;
 			display: none;
@@ -343,7 +331,6 @@ body {
 		}
 		.show {
 			display: block;
-			
 		}
 	}
 
@@ -352,12 +339,11 @@ body {
 		.hero-section {
 			flex-direction: column-reverse;
 			.hero-heading {
-				text-align: center;
 				height: 100%;
 				width: auto;
 				flex: 1;
 				padding: 0 1rem;
-
+				line-height: 2rem;
 				button {
 					width: auto;
 					font-size: 1rem;
@@ -384,7 +370,7 @@ body {
 
 		.about-heading {
 			text-align: center;
-			padding: 0 1rem;
+			padding: 1rem;
 
 			button {
 				background-color: rgba(128, 128, 128, 0.781);
@@ -402,9 +388,12 @@ body {
 			}
 		}
 		.about-img {
-			margin-top: 6rem;
-			margin-left: 10rem;
+			margin-top: 3rem;
 			width: 100%;
+			img {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 	#services {
@@ -421,6 +410,16 @@ body {
 			}
 		}
 	}
-
-
+	.hire {
+		margin: 2rem 0 0 0;
+		p {
+			font-size: 1.1rem;
+		}
+	}
+	.footer {
+	line-height: 1.5rem;
+	h1 {
+		font-size: 1.4rem !important;
+	}
+}
 }
