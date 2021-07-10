@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
 
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Overpass", sans-serif;
 	overflow-x: hidden !important;
 	position: relative;
 }
@@ -13,6 +12,8 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+/* nav section */
 .nav-section {
 	height: 10vh;
 	width: 100%;
@@ -40,7 +41,6 @@ body {
 	.nav-logo {
 		h2 {
 			font-size: 2rem;
-			font-family: "Charmonman", cursive;
 			text-transform: uppercase;
 			color: whitesmoke;
 		}
@@ -76,6 +76,8 @@ body {
 		}
 	}
 }
+
+/* hero section */
 #hero {
 	background-color: black;
 	background-attachment: fixed;
@@ -131,7 +133,7 @@ body {
 	}
 }
 
-/*about*/
+/*about section */
 #about {
 	height: 80vh;
 	width: auto;
@@ -175,6 +177,7 @@ body {
 	}
 }
 
+/* service section */
 #services {
 	text-align: center;
 	height: 40rem;
@@ -188,7 +191,6 @@ body {
 	p {
 		font-size: 1.2rem;
 		text-transform: capitalize;
-		font-weight: 700;
 	}
 	.cards {
 		display: flex;
@@ -210,6 +212,7 @@ body {
 	}
 }
 
+/*Hire section */
 .hire {
 	background-color: rgba(189, 191, 194, 0.932);
 	height: 8rem;
@@ -241,6 +244,7 @@ body {
 	}
 }
 
+/*footer section */
 .footer {
 	color: whitesmoke;
 	background-color: black;
@@ -278,12 +282,12 @@ body {
 			margin: 0.9rem 0 !important;
 		}
 	}
+	/* nav section */
 	.nav-section {
 		padding: 1rem;
 		.nav-logo {
 			h2 {
 				font-size: 2rem;
-				font-family: "Charmonman", cursive;
 				text-transform: uppercase;
 				color: whitesmoke;
 				text-align: left;
@@ -333,7 +337,7 @@ body {
 			display: block;
 		}
 	}
-
+	/* hero section */
 	#hero {
 		height: 90vh;
 		.hero-section {
@@ -344,6 +348,7 @@ body {
 				flex: 1;
 				padding: 0 1rem;
 				line-height: 2rem;
+				align-items: center;
 				button {
 					width: auto;
 					font-size: 1rem;
@@ -396,6 +401,7 @@ body {
 			}
 		}
 	}
+	/* service section */
 	#services {
 		margin-top: 5rem;
 		height: auto;
@@ -410,16 +416,19 @@ body {
 			}
 		}
 	}
+
+	/*Hire section */
 	.hire {
 		margin: 2rem 0 0 0;
 		p {
 			font-size: 1.1rem;
 		}
 	}
+	/*footer section */
 	.footer {
-	line-height: 1.5rem;
-	h1 {
-		font-size: 1.4rem !important;
+		line-height: 1.5rem;
+		h1 {
+			font-size: 1.4rem !important;
+		}
 	}
-}
 }

@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/main.min.css" />
+		<!-- external CSS -->
+		<link rel="stylesheet" href="css/main.css" />
 		<title>mini project</title>
 		<link
 			rel="stylesheet"
@@ -11,6 +12,7 @@
 			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
 			crossorigin="anonymous"
 		/>
+
 	</head>
 	<body>
 		<div class="nav-section">
@@ -91,12 +93,6 @@
 				<i class="fab fa-linkedin-in"></i>
 			</div>
 		</section>
-		<script>
-			const open = document.querySelector(".menu>button");
-			var navbar = document.querySelector(".nav-bar");
-			open.addEventListener("click", () => {
-				navbar.classList.toggle(`show`);
-			});
-		</script>
+	<script src="js/app.js"></script>
 	</body>
 </html>
